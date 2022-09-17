@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "BackUpWorkflowsToGithub",
-  "active": false,
+  "active": true,
   "nodes": [
     {
       "parameters": {},
@@ -268,7 +268,7 @@
         "operation": "get",
         "owner": "={{$node[\"Globals\"].json[\"repo\"][\"owner\"]}}",
         "repository": "={{$node[\"Globals\"].json[\"repo\"][\"name\"]}}",
-        "filePath": "={{$node[\"Globals\"].json[\"repo\"][\"path\"]}}{{JSON.parse($json[\"data\"]).name}}.json",
+        "filePath": "={{$node[\"Globals\"].json[\"repo\"][\"path\"]}}/{{JSON.parse($json[\"data\"]).name}}.json",
         "asBinaryProperty": false,
         "additionalParameters": {}
       },
@@ -294,13 +294,12 @@
         "triggerTimes": {
           "item": [
             {
-              "mode": "everyX",
-              "value": 12
+              "hour": 3
             }
           ]
         }
       },
-      "name": "Every 12 hours",
+      "name": "Every Day",
       "type": "n8n-nodes-base.cron",
       "position": [
         240,
@@ -517,7 +516,7 @@
         ]
       ]
     },
-    "Every 12 hours": {
+    "Every Day": {
       "main": [
         [
           {
@@ -530,7 +529,7 @@
     }
   },
   "createdAt": "2022-09-17T03:48:35.034Z",
-  "updatedAt": "2022-09-17T12:28:44.797Z",
+  "updatedAt": "2022-09-17T12:48:04.753Z",
   "settings": {},
   "staticData": null,
   "pinData": {},
