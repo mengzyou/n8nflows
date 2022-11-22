@@ -1,4 +1,6 @@
 {
+  "createdAt": "2022-09-17T03:48:35.034Z",
+  "updatedAt": "2022-09-17T12:48:59.782Z",
   "id": 1,
   "name": "BackUpWorkflowsToGithub",
   "active": true,
@@ -528,17 +530,16 @@
       ]
     }
   },
-  "createdAt": "2022-09-17T03:48:35.034Z",
-  "updatedAt": "2022-09-17T12:48:59.782Z",
   "settings": {},
   "staticData": null,
   "pinData": {},
   "tags": [
     {
-      "id": "1",
-      "name": "catalog:devops",
       "createdAt": "2022-09-17T04:28:23.598Z",
-      "updatedAt": "2022-09-17T04:28:23.598Z"
+      "updatedAt": "2022-09-17T04:28:23.598Z",
+      "id": "1",
+      "name": "catalog:devops"
     }
-  ]
+  ],
+  "hash": "72ddfa326e057d00f49fd5f7efbfaa5a"
 }
